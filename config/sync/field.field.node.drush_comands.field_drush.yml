@@ -1,0 +1,21 @@
+uuid: 23865c84-75e0-43ca-bee4-b470f5e62856
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drush
+    - node.type.drush_comands
+id: node.drush_comands.field_drush
+field_name: field_drush
+entity_type: node
+bundle: drush_comands
+label: drush
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

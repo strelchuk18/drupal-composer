@@ -1,0 +1,46 @@
+uuid: c555f006-8515-42a7-8c6d-2b81fe15fe15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.drush_comands.body
+    - field.field.node.drush_comands.field_drush
+    - field.field.node.drush_comands.field_title
+    - node.type.drush_comands
+  module:
+    - text
+    - user
+id: node.drush_comands.default
+targetEntityType: node
+bundle: drush_comands
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_drush:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

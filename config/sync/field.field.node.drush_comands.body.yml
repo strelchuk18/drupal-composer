@@ -1,0 +1,22 @@
+uuid: 47d7c977-4d70-4c27-9fed-4912c09f3af4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.drush_comands
+  module:
+    - text
+id: node.drush_comands.body
+field_name: body
+entity_type: node
+bundle: drush_comands
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

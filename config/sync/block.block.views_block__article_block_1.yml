@@ -1,0 +1,32 @@
+uuid: cad036f0-237f-4b62-b44c-4d0f76459ea8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.article
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__article_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:article-block_1'
+settings:
+  id: 'views_block:article-block_1'
+  label: Article
+  provider: views
+  label_display: visible
+  views_label: Article
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

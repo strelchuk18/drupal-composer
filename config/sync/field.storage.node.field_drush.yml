@@ -1,0 +1,19 @@
+uuid: 812ce57e-c39f-4741-9762-7f2f0a2e0246
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_drush
+field_name: field_drush
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
