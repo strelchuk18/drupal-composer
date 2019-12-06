@@ -1,11 +1,11 @@
-uuid: 5c4e00a8-f5ee-458c-9327-e475377d1eb5
+uuid: 6ac449db-4921-422b-9162-ab023f0d631d
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.drush_comands.body
-    - field.field.node.drush_comands.field_drush
-    - field.field.node.drush_comands.field_title
+    - field.field.node.drush_comands.field_aliases
+    - field.field.node.drush_comands.field_comand
     - node.type.drush_comands
   module:
     - path
@@ -22,6 +22,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -30,23 +31,21 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_drush:
+  field_aliases:
     weight: 123
     settings:
-      match_operator: CONTAINS
       size: 60
-      placeholder: ''
+      placeholder: $
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: string_textfield
     region: content
-  field_title:
+  field_comand:
     weight: 122
     settings:
-      match_operator: CONTAINS
       size: 60
-      placeholder: ''
+      placeholder: $
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: string_textfield
     region: content
   path:
     type: path
@@ -90,6 +89,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
 hidden: {  }

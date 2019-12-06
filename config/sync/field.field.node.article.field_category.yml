@@ -1,4 +1,4 @@
-uuid: 28cb8498-97bc-49c4-805f-6161930b5e4b
+uuid: ca28effe-7109-40af-83e6-c1b9cd4e16d7
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ id: node.article.field_category
 field_name: field_category
 entity_type: node
 bundle: article
-label: category
+label: Category
 description: ''
 required: false
 translatable: false

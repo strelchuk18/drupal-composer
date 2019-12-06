@@ -1,10 +1,12 @@
-uuid: 9e0944af-9aca-48d9-abd6-26b91257d450
+uuid: 12f22077-a943-496e-963b-eead2f533d8d
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.drush_comands.body
+    - field.field.node.drush_comands.field_aliases
+    - field.field.node.drush_comands.field_comand
     - node.type.drush_comands
   module:
     - text
@@ -27,4 +29,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_aliases: true
+  field_comand: true

@@ -1,4 +1,4 @@
-uuid: 18c3ec1a-9f48-4a73-84e3-59aa26d14a29
+uuid: ef7c4810-eab6-43c5-85c8-cab803b0ebf6
 langcode: en
 status: true
 dependencies:
@@ -32,7 +32,7 @@ content:
     label: hidden
   comment:
     type: comment_default
-    weight: 5
+    weight: 4
     region: content
     label: above
     settings:
@@ -40,11 +40,12 @@ content:
       pager_id: 0
     third_party_settings: {  }
   field_category:
-    weight: 3
+    weight: 2
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_id
+    type: entity_reference_label
     region: content
   field_image:
     type: image
@@ -55,17 +56,10 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
-  field_tags:
-    type: entity_reference_label
-    weight: 2
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   links:
-    weight: 4
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_tags: true

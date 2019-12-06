@@ -1,4 +1,4 @@
-uuid: 632964e5-7a78-4f49-a9d3-27c5f5c92769
+uuid: 64b75844-9267-481f-b19f-06c40d68b3b4
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ dependencies:
     - path
     - text
 _core:
-  default_config_hash: vPb_yvhA-xuNoV_yOmOwYxGuHNRIH1CoMK2qi7BSga0
+  default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -30,21 +30,22 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
   comment:
     type: comment_default
-    weight: 9
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_category:
-    weight: 3
+    weight: 121
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -59,16 +60,17 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 2
+    weight: 3
     region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -76,21 +78,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 15
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 120
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 16
     region: content
     third_party_settings: {  }
   title:
@@ -107,6 +109,7 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }

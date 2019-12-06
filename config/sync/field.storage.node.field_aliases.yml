@@ -1,15 +1,17 @@
-uuid: 812ce57e-c39f-4741-9762-7f2f0a2e0246
+uuid: 0722d502-3cd1-495e-95b7-f29933e9ea30
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_drush
-field_name: field_drush
+id: node.field_aliases
+field_name: field_aliases
 entity_type: node
-type: entity_reference
+type: string
 settings:
-  target_type: node
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

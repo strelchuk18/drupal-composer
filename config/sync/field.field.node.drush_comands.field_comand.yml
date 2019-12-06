@@ -1,0 +1,21 @@
+uuid: 6c31ace1-229e-4ae1-94c5-4e1f07d391fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comand
+    - node.type.drush_comands
+id: node.drush_comands.field_comand
+field_name: field_comand
+entity_type: node
+bundle: drush_comands
+label: Comand
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: $
+default_value_callback: ''
+settings: {  }
+field_type: string

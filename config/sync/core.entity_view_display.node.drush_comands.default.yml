@@ -1,11 +1,11 @@
-uuid: c555f006-8515-42a7-8c6d-2b81fe15fe15
+uuid: 73d69bce-529d-4db7-a4c2-ec9c6cc21039
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.drush_comands.body
-    - field.field.node.drush_comands.field_drush
-    - field.field.node.drush_comands.field_title
+    - field.field.node.drush_comands.field_aliases
+    - field.field.node.drush_comands.field_comand
     - node.type.drush_comands
   module:
     - text
@@ -18,28 +18,28 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_drush:
-    weight: 3
+  field_aliases:
+    weight: 2
     label: above
     settings:
-      link: true
+      link_to_entity: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: string
     region: content
-  field_title:
-    weight: 0
+  field_comand:
+    weight: 1
     label: above
     settings:
-      link: true
+      link_to_entity: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: string
     region: content
   links:
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
