@@ -1,0 +1,31 @@
+uuid: e41f9e02-1de5-4560-bb3c-eeed54a89b3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_banner.field_link_on_youtube
+    - field.field.paragraph.video_banner.field_text
+    - paragraphs.paragraphs_type.video_banner
+id: paragraph.video_banner.default
+targetEntityType: paragraph
+bundle: video_banner
+mode: default
+content:
+  field_link_on_youtube:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_text:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

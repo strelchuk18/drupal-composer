@@ -1,0 +1,20 @@
+uuid: c0abfdfb-7e65-459f-85a0-48230c00f3bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_link_on_youtube
+field_name: field_link_on_youtube
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

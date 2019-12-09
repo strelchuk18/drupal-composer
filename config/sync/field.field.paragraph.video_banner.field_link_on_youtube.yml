@@ -1,0 +1,28 @@
+uuid: e5fcd814-385a-4370-93b8-d657ce2522e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_on_youtube
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.video_banner
+id: paragraph.video_banner.field_link_on_youtube
+field_name: field_link_on_youtube
+entity_type: paragraph
+bundle: video_banner
+label: 'Link on YouTube'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

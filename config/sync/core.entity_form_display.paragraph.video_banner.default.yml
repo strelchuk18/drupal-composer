@@ -1,0 +1,33 @@
+uuid: 3227f5ad-4b69-4e00-a917-71ac64124c35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_banner.field_link_on_youtube
+    - field.field.paragraph.video_banner.field_text
+    - paragraphs.paragraphs_type.video_banner
+  module:
+    - media_library
+id: paragraph.video_banner.default
+targetEntityType: paragraph
+bundle: video_banner
+mode: default
+content:
+  field_link_on_youtube:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_text:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
