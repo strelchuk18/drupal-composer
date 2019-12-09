@@ -186,7 +186,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: drush-comands
+      path: Drush-comands
       menu:
         type: normal
         title: /drupalcomands
