@@ -1,0 +1,28 @@
+uuid: c551e3dd-6f6b-4983-958c-4a34be7505ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_m
+    - media.type.image
+    - paragraphs.paragraphs_type.media_images
+id: paragraph.media_images.field_m
+field_name: field_m
+entity_type: paragraph
+bundle: media_images
+label: 'Media Images'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

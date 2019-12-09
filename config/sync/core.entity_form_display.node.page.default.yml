@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_media_images
     - field.field.node.page.field_paragraph_image
     - node.type.page
   module:
@@ -33,6 +34,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_media_images:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_paragraph_image:
     type: entity_reference_paragraphs
     weight: 7

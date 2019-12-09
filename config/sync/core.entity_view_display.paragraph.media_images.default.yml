@@ -1,0 +1,22 @@
+uuid: 24c0c6d2-1ad5-4f82-a26e-b390687cf00d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_images.field_m
+    - paragraphs.paragraphs_type.media_images
+id: paragraph.media_images.default
+targetEntityType: paragraph
+bundle: media_images
+mode: default
+content:
+  field_m:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }
