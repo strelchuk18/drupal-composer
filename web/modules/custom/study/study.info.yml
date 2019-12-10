@@ -1,0 +1,4 @@
+name: 'study'
+description: 'Study'
+core: 8.x
+type: module
