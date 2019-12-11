@@ -1,0 +1,37 @@
+uuid: caf1cc5e-7b85-47e6-b77a-ca76864075a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_v
+    - node.type.page
+    - paragraphs.paragraphs_type.video_banner
+  module:
+    - entity_reference_revisions
+id: node.page.field_v
+field_name: field_v
+entity_type: node
+bundle: page
+label: Video-Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      video_banner: video_banner
+    target_bundles_drag_drop:
+      images:
+        weight: 4
+        enabled: false
+      media_images:
+        weight: 5
+        enabled: false
+      video_banner:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

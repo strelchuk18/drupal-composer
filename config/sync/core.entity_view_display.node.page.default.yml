@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_media_images
     - field.field.node.page.field_paragraph_image
+    - field.field.node.page.field_v
     - node.type.page
   module:
     - entity_reference_revisions
@@ -37,6 +38,15 @@ content:
   field_paragraph_image:
     type: entity_reference_revisions_entity_view
     weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_v:
+    type: entity_reference_revisions_entity_view
+    weight: 4
     label: above
     settings:
       view_mode: default

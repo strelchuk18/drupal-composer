@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_media_images
     - field.field.node.page.field_paragraph_image
+    - field.field.node.page.field_v
     - node.type.page
   module:
     - text
@@ -32,3 +33,4 @@ content:
 hidden:
   field_media_images: true
   field_paragraph_image: true
+  field_v: true

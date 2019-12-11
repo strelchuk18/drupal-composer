@@ -1,0 +1,6 @@
+study:
+  css:
+    theme:
+      assets/css/study.css: {}
+  js:
+    assets/css/study.js: {}
