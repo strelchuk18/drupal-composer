@@ -4,7 +4,7 @@ function study_page_attachments(array &$attachments) {
   $attachments['#attached']['library'][] = 'study/study';
 
   // Conditionally attach an asset to the page.
-  if (!\Drupal::currentUser()->hasPermission('admin')) {
+  if (!\Drupal::currentUser()) {
     $attachments['#attached']['library'][] = 'study/study';
   }
 }
