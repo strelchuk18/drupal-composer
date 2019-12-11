@@ -1,6 +1,7 @@
 study:
+  header: true
   css:
     theme:
-      assets/css/study.css: {}
+      study/assets/css/study.css: {}
   js:
-    assets/css/study.js: {}
+    study/assets/css/study.js: {}
